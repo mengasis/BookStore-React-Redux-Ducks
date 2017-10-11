@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  reactjs:
+    build: .
+    container_name: reactjs
+    entrypoint: sh entrypoint.sh
+    working_dir: /home/node
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/home/node
