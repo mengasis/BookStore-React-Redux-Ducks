@@ -8,6 +8,6 @@ export default [
 		path: '/listProducts'
 	},{
 		title: 'Productos Favoritos',
-		path: '/favorites'
+		path: '/favoriteProducts'
 	}
 ]
