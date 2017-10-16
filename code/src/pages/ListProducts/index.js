@@ -25,10 +25,10 @@ class ListProducts extends Component {
 											<h3>$ {value.price}</h3>
 											<ButtonToolbar>
 												<Button>
-													<Glyphicon glyph="star" /> Like
+													<Glyphicon glyph="bookmark" /> Agregar a Favoritos
 												</Button>
-												<Button>
-													<Glyphicon glyph="star" /> Comprar
+												<Button bsStyle="success">
+													<Glyphicon glyph="shopping-cart" /> Comprar
 												</Button>
 											</ButtonToolbar>
 									
