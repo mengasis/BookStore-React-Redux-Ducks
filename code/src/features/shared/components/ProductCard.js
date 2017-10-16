@@ -3,10 +3,21 @@ import PropTypes from 'prop-types'
 import { Row, Col, Glyphicon, Button, Media, ButtonToolbar } from 'react-bootstrap'
 
 class ProductCard extends Component {
+
+	constructor(props) {
+		super(props)
+		
+		this.handleFavorite = this.handleFavorite.bind(this)
+	}
+	
+	handleFavorite(e){
+		e.preventDefault()
+		console.log(e.target.id)
+	}
+
 	render() {
-
 		const { product } = this.props
-
+		console.log(product)
 		return (
 			<div>
 				<Row className="card-product">
@@ -20,7 +31,7 @@ class ProductCard extends Component {
 								<p>{product.description}</p>
 								<h3>$ {product.price}</h3>
 								<ButtonToolbar>
-									<Button>
+									<Button id={product.id} onClick={this.handleFavorite}>
 										<Glyphicon glyph="bookmark" /> Agregar a Favoritos
 									</Button>
 									<Button bsStyle="success">
