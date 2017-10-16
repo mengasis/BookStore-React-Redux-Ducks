@@ -10,31 +10,34 @@ class ListProducts extends Component {
 
 		return (
 			<div>
-				<Grid className="card-product">
-					<Row>
-						<Col xs={6} md={10}>
-							<Media>
-								<Media.Left>
-									<img width={140} height={200} src={products[0].image} alt="Image"/>
-								</Media.Left>
-								<Media.Body className="list-description">
-									<Media.Heading>{products[0].title}</Media.Heading>
-									<p>{products[0].description}</p>
-									<h3>$ {products[0].price}</h3>
-									<ButtonToolbar>
+				<Grid>
+					{ products
+						.map((value, key) => 
+							<Row key={key} className="card-product">
+								<Col xs={6} md={10}>
+									<Media>
+										<Media.Left>
+											<img width={140} height={200} src={value.image} alt="Image"/>
+										</Media.Left>
+										<Media.Body className="list-description">
+											<Media.Heading>{value.title}</Media.Heading>
+											<p>{value.description}</p>
+											<h3>$ {value.price}</h3>
+											<ButtonToolbar>
+												<Button>
+													<Glyphicon glyph="star" /> Like
+												</Button>
+												<Button>
+													<Glyphicon glyph="star" /> Comprar
+												</Button>
+											</ButtonToolbar>
 									
-										<Button>
-											<Glyphicon glyph="star" /> Like
-										</Button>
-										<Button>
-											<Glyphicon glyph="star" /> Comprar
-										</Button>
-									</ButtonToolbar>
-									
-								</Media.Body>
-							</Media>
-						</Col>
-					</Row>
+										</Media.Body>
+									</Media>
+								</Col>
+							</Row>
+						)
+					}
 				</Grid>
 			</div>
 		)

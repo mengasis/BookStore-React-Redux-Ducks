@@ -120,10 +120,18 @@ export default [
 	},
 	{
 		id: 8,
-		title: 'EGIPTO ETERNO 10000 AC 2500 AC',
-		description: '',
-		image: 'images/',
-		price: '18.449'
+		title: 'LA SEGUNDA GUERRA MUNDIAL',
+		description: `En este libro Weinberg nos ofrece una magistral visión de conjunto 
+                  del conflicto, que arranca de sus causas –el ascenso de Hitler, la crisis de 
+                  Checoslovaquia, los planes de guerra de Japón…-, sigue paso a paso la evolución 
+                  de los combates, ilustrándolos con una excelente serie de mapas, y analiza, al 
+                  propio tiempo, el impacto que la guerra tuvo en la vida cotidiana de la población 
+                  civil. Esta es, en suma, una historia esencial en que uno de los máximos conocedores 
+                  del tema pone a nuestro alcance los conocimientos fundamentales para entender lo que 
+                  significó la mayor de las guerras de la historia, que causó sesenta millones de muertos, 
+                  en su mayoría entre la población civil.`,
+		image: 'images/la-segunda-guerra-mundial.jpg',
+		price: '22.705'
 	},
 	{
 		id: 9,
