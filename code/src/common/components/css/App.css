@@ -29,9 +29,9 @@
 }
 
 .Content {
-	margin: 0 auto;
+  margin: 0 auto;
 	width: 90%;
-	padding: 20px;
+	padding: 60px;
 }
 
 @keyframes App-logo-spin {

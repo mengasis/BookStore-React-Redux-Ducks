@@ -5,7 +5,7 @@ import { Nav, NavItem } from 'react-bootstrap'
 
 
 import menu from '../../utils/menu'
-import logo from './image/logo.png'
+import logo from './image/sparta.png'
 import './css/App.css'
 
 
