@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import { Nav, NavItem, Glyphicon } from 'react-bootstrap'
 
 
-import menu from '../../utils/menu'
+import menu from '../../../utils/menu'
 import logo from './image/sparta.png'
 import './css/App.css'
 
