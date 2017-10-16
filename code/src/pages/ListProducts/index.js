@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import { Grid, Row, Col, Glyphicon, Button, Media, ButtonToolbar } from 'react-bootstrap'
+import { Grid } from 'react-bootstrap'
 
 import './ListProducts.css'
 import products from '../../utils/products'
+import ProductCard from '../../shared/components/ProductCard'
 
 class ListProducts extends Component {
 	render() {
@@ -13,29 +14,7 @@ class ListProducts extends Component {
 				<Grid>
 					{ products
 						.map((value, key) => 
-							<Row key={key} className="card-product">
-								<Col xs={6} md={10}>
-									<Media>
-										<Media.Left>
-											<img width={140} height={200} src={value.image} alt="Image"/>
-										</Media.Left>
-										<Media.Body className="list-description">
-											<Media.Heading>{value.title}</Media.Heading>
-											<p>{value.description}</p>
-											<h3>$ {value.price}</h3>
-											<ButtonToolbar>
-												<Button>
-													<Glyphicon glyph="bookmark" /> Agregar a Favoritos
-												</Button>
-												<Button bsStyle="success">
-													<Glyphicon glyph="shopping-cart" /> Comprar
-												</Button>
-											</ButtonToolbar>
-									
-										</Media.Body>
-									</Media>
-								</Col>
-							</Row>
+							<ProductCard key={key} product={value}/> 
 						)
 					}
 				</Grid>
