@@ -7,20 +7,8 @@ export default [
             del Nilo en busca de agua y tierra para sobrevivir. Este gran río es el 
             origen y el sustento de una avanzada civilización cuya primera dinastía 
             comenzó a emerger lentamente hacia el 5.500 A.C. y que duraría más de 
-            3.000 años. Descubre los inicios y los primeros siglos de la cultura 
-            más cautivadora de la historia.  Desde el nacimiento de los primeros mitos, 
-            sus dioses, hasta la sexualidad, la vida social de nobles y campesinos, las 
-            relaciones exteriores con pueblos coetáneos, las primeras dinastías, su 
-            arquitectura, la guerra y sus conocimientos de navegación que aplicaron en 
-            el Nilo y en el Mediterráneo. Un apasionante viaje que nos acerca de manera 
-            rigurosa y amena a los tesoros y misterios de los orígenes de la civilización 
-            que nació a orillas del Nilo. Un nuevo estilo de divulgación histórica de manos 
-            de un curtido egiptólogo que ha publicado ya varios títulos sobre esta 
-            civilización y que forma parte del Instituto de Estudios del Antiguo Egipto. 
-            Una obra prologada por Francisco Martín, académico del Instituto de Estudios 
-            del Antiguo Egipto y director del  proyecto «Senen Mut» del que es patrocinador. 
-            Nowtilus.`,
-		image: 'egipto-eterno.jpg',
+            3.000 años.`,
+		image: 'images/egipto-eterno.jpg',
 		price: '18.449'
 	},
 	{
@@ -42,7 +30,7 @@ export default [
             en jaque a las dos mayores potencias mundiales: Francia y España que ansían 
             coronarse como grandes Imperios. Carlos I apoya su ejército gracias a las alianzas 
             de sus hermanas con algunos de los grandes reyes de Europa (Dinamarca, Portugal).`,
-		image: 'carlosV_a_la_conquista_de_europa.jpg',
+		image: 'images/carlosV_a_la_conquista_de_europa.jpg',
 		price: '18.031'
 	},
 	{
@@ -58,7 +46,7 @@ export default [
             a su riqueza derivada de las actividades bancarias y comerciales, se convirtieron en 
             grandes duques de un pequeño estado de la Italia central, a la sombra de la Monarquía 
             Hispánica de los Habsburgo.`,
-		image: 'breve_historia_medici.jpg',
+		image: 'images/breve_historia_medici.jpg',
 		price: '15.238'
 	},
 	{
@@ -74,7 +62,7 @@ export default [
             y a los avances económicos, sino que abarca temas tan diversos como los nacionalismos, 
             las luchas campesinas, el movimiento obrero, las ideas religiosas, la ciencia o las 
             artes.`,
-		image: 'la_era_de_la_revolucion.jpg',
+		image: 'images/la_era_de_la_revolucion.jpg',
 		price: '26.125'
 	},
 	{
@@ -89,7 +77,7 @@ export default [
             Por primera vez vemos la imparable propaganda del poder, la política a cara de perro, 
             la brutalidad y la represión que yacen tras la apariencia de una monarquía 
             imperturbable, así como los extraordinarios logros que la hicieron famosa.`,
-		image: 'auge-y-caida-del-antiguo-egipto.jpg',
+		image: 'images/auge-y-caida-del-antiguo-egipto.jpg',
 		price: '38.950'
 	},
 	{
@@ -107,7 +95,7 @@ export default [
             condujeron a un desastre final, en una narración de innegable grandeza, que llevó al 
             gran historiador británico Macaulay a sostener que se trataba, no sólo del más grande 
             libro de historia de todos los tiempos, sino de la “cima del arte humano”.`,
-		image: 'historia-de-la-guerra-del-peloponeso.jpg',
+		image: 'images/historia-de-la-guerra-del-peloponeso.jpg',
 		price: '31.255'
 	},
 	{
@@ -127,14 +115,14 @@ export default [
             que durante seis siglos había sido una gran potencia mundial. Unos antecedentes que es 
             preciso conocer para entender la naturaleza de los problemas actuales del Oriente 
             Próximo.`,
-		image: 'la-caida-de-los-otomanos.jpg',
+		image: 'images/la-caida-de-los-otomanos.jpg',
 		price: '26.505'
 	},
 	{
 		id: 8,
 		title: 'EGIPTO ETERNO 10000 AC 2500 AC',
 		description: '',
-		image: '',
+		image: 'images/',
 		price: '18.449'
 	},
 	{
@@ -148,7 +136,7 @@ export default [
             señalaron su apogeo y los fracasos que llevaron el Imperio a la decadencia? A todas 
             estas cuestiones responde cumplidamente, en una perfecta síntesis, este libro del 
             gran historiador de la antigüedad Pierre Grimal.`,
-		image: 'el-imperio-romano.jpg',
+		image: 'images/el-imperio-romano.jpg',
 		price: '16.055'
 	},
 	{
@@ -166,7 +154,7 @@ export default [
             bidireccional. Es decir, a la de nición clásica como eufemismo de la gran purga 
             incorpora el terror real que la cúpula bolchevique tenía —a veces fundadamente, a 
             veces sin base alguna— a ser derrocados, saboteados y/o asesinados.`,
-		image: 'el-gran-miedo.jpg',
+		image: 'images/el-gran-miedo.jpg',
 		price: '23.655'
 	}
 ]

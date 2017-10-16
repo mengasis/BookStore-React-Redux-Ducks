@@ -1,10 +1,41 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import { Grid, Row, Col, Glyphicon, Button, Media, ButtonToolbar } from 'react-bootstrap'
+
+import './ListProducts.css'
+import products from '../../utils/products'
 
 class ListProducts extends Component {
 	render() {
+
 		return (
 			<div>
+				<Grid className="card-product">
+					<Row>
+						<Col xs={6} md={10}>
+							<Media>
+								<Media.Left>
+									<img width={140} height={200} src={products[0].image} alt="Image"/>
+								</Media.Left>
+								<Media.Body className="list-description">
+									<Media.Heading>{products[0].title}</Media.Heading>
+									<p>{products[0].description}</p>
+									<h3>$ {products[0].price}</h3>
+									<ButtonToolbar>
+									
+										<Button>
+											<Glyphicon glyph="star" /> Like
+										</Button>
+										<Button>
+											<Glyphicon glyph="star" /> Comprar
+										</Button>
+									</ButtonToolbar>
+									
+								</Media.Body>
+							</Media>
+						</Col>
+					</Row>
+				</Grid>
 			</div>
 		)
 	}
