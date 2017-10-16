@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
+  animation: App-logo-spin infinite 2s linear;
   height: 80px;
 }
 
@@ -20,6 +20,18 @@
 
 .App-intro {
   font-size: large;
+}
+
+.App-menu li {
+  color: white;
+  display: inline-block;
+  padding-right: 20px;
+}
+
+.Content {
+	margin: 0 auto;
+	width: 90%;
+	padding: 20px;
 }
 
 @keyframes App-logo-spin {
