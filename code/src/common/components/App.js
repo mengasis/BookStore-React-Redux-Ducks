@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { LinkContainer } from 'react-router-bootstrap'
 import PropTypes from 'prop-types'
-import { Nav, NavItem } from 'react-bootstrap'
+import { Nav, NavItem, Glyphicon } from 'react-bootstrap'
 
 
 import menu from '../../utils/menu'
@@ -18,7 +18,7 @@ class App extends Component {
 			<div className="App">
 				<header className="App-header">
 					<img src={logo} className="App-logo" alt="logo" />
-					<h1 className="App-title">BookJS</h1>
+					<h1 className="App-title">Universal History Books</h1>
 					<div>
 						<Nav bsStyle="tabs" justified>
 							{ menu.map(
