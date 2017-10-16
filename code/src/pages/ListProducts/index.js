@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
 import { Grid } from 'react-bootstrap'
 
 import './ListProducts.css'
@@ -21,10 +20,6 @@ class ListProducts extends Component {
 			</div>
 		)
 	}
-}
-
-ListProducts.propTypes = {
-
 }
 
 export default ListProducts
