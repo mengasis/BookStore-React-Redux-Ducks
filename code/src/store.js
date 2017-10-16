@@ -3,7 +3,10 @@ import thunk from 'redux-thunk'
 import { composeWithDevTools } from 'redux-devtools-extension'
 import { combineReducers } from 'redux-immutable'
 
+import navigationReducer from './ducks/navigation'
+
 const reducers = combineReducers({
+	navigation: navigationReducer
 })
 
 const store = createStore(reducers, 

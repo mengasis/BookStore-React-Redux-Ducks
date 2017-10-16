@@ -5,11 +5,11 @@ import { Row, Col, Glyphicon, Button, Media, ButtonToolbar } from 'react-bootstr
 class ProductCard extends Component {
 	render() {
 
-		const { key, product } = this.props
+		const { product } = this.props
 
 		return (
 			<div>
-				<Row key={key} className="card-product">
+				<Row className="card-product">
 					<Col xs={6} md={10}>
 						<Media>
 							<Media.Left>
@@ -38,7 +38,6 @@ class ProductCard extends Component {
 }
 
 ProductCard.propTypes = {
-	key: PropTypes.string.isRequired,
 	product: PropTypes.shape({
 		id: PropTypes.number,
 		title: PropTypes.string,
