@@ -4,9 +4,11 @@ import { composeWithDevTools } from 'redux-devtools-extension'
 import { combineReducers } from 'redux-immutable'
 
 import navigationReducer from './ducks/navigation'
+import productsReducer from './ducks/products'
 
 const reducers = combineReducers({
-	navigation: navigationReducer
+	navigation: navigationReducer,
+	products: productsReducer
 })
 
 const store = createStore(reducers, 

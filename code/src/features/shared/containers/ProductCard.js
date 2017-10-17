@@ -1,13 +1,13 @@
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 
-import AppComponent from '../components/App'
-import * as actions from '../../../ducks/navigation'
+import ProductCardComponent from '../components/ProductCard'
+import * as actions from '../../../ducks/products'
 
 
 const mapStateToProps = (state) => {
 	return {
-		currentPage: state.get('navigation').get('currentPage')
+		favorites: state.get('products').get('favorites')
 	}
 }
 
@@ -16,9 +16,9 @@ const mapDispatchToProps = (dispatch) => {
 		actions: bindActionCreators(actions.duckActions, dispatch)
 	}
 }
-const AppContainer = connect(
+const ProductCardContainer = connect(
 	mapStateToProps,
 	mapDispatchToProps
-)(AppComponent)
+)(ProductCardComponent)
 
-export default AppContainer
+export default ProductCardContainer
