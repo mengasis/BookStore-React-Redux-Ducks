@@ -8,11 +8,17 @@ class ProductCard extends Component {
 		super(props)
 		
 		this.handleFavorite = this.handleFavorite.bind(this)
+		this.handleFavorite = this.handleFavorite.bind(this)
 	}
 	
-	handleFavorite(e){
+	handleAddFavorite(e){
 		e.preventDefault()
-		console.log(e.target.id)
+		this.props.actions.addFavorites(e.target.id)
+	}
+
+	handleRemoveFavorite(e){
+		e.preventDefault()
+		this.props.actions.removeFavorites(e.target.id)
 	}
 
 	render() {
@@ -54,7 +60,8 @@ ProductCard.propTypes = {
 		title: PropTypes.string,
 		description: PropTypes.string,
 		image: PropTypes.string
-	})
+	}),
+	actions: PropTypes.objectOf(PropTypes.func)
 }
 
 export default ProductCard
