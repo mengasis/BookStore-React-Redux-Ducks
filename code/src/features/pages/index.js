@@ -4,7 +4,7 @@ import { Route, Switch } from 'react-router-dom'
 import App from '../common/containers/App'
 import Home from './Home'
 import ListProducts from './ListProducts'
-import FavoriteProducts from './FavoriteProducts'
+import FavoriteProducts from './FavoriteProducts/containers/FavoriteProducts'
 
 const AppRoutes = () =>
 	<App>
