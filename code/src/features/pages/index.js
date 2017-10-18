@@ -1,7 +1,7 @@
 import React from 'react'
 import { Route, Switch } from 'react-router-dom'
 
-import App from '../common/components/App'
+import App from '../common/containers/App'
 import Home from './Home'
 import ListProducts from './ListProducts'
 import FavoriteProducts from './FavoriteProducts'
