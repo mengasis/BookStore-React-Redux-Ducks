@@ -7,8 +7,8 @@ class ProductCard extends Component {
 	constructor(props) {
 		super(props)
 		
-		this.handleFavorite = this.handleFavorite.bind(this)
-		this.handleFavorite = this.handleFavorite.bind(this)
+		this.handleAddFavorite = this.handleAddFavorite.bind(this)
+		this.handleRemoveFavorite = this.handleRemoveFavorite.bind(this)
 	}
 	
 	handleAddFavorite(e){
@@ -22,8 +22,8 @@ class ProductCard extends Component {
 	}
 
 	render() {
-		const { product } = this.props
-		console.log(product)
+		const { product, favorites } = this.props
+
 		return (
 			<div>
 				<Row className="card-product">
@@ -37,9 +37,16 @@ class ProductCard extends Component {
 								<p>{product.description}</p>
 								<h3>$ {product.price}</h3>
 								<ButtonToolbar>
-									<Button id={product.id} onClick={this.handleFavorite}>
-										<Glyphicon glyph="bookmark" /> Agregar a Favoritos
-									</Button>
+
+									{ favorites.get(product.id.toString()) === 1 ?
+										<Button bsStyle="danger" id={product.id} onClick={this.handleRemoveFavorite}>
+											<Glyphicon glyph="bookmark" /> Quitar de Favoritos
+										</Button>
+										:
+										<Button id={product.id} onClick={this.handleAddFavorite}>
+											<Glyphicon glyph="bookmark" /> Agregar a Favoritos
+										</Button>
+									}
 									<Button bsStyle="success">
 										<Glyphicon glyph="shopping-cart" /> Comprar
 									</Button>
@@ -61,6 +68,7 @@ ProductCard.propTypes = {
 		description: PropTypes.string,
 		image: PropTypes.string
 	}),
+	favorites: PropTypes.object,
 	actions: PropTypes.objectOf(PropTypes.func)
 }
 
