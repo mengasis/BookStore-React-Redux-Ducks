@@ -20,7 +20,7 @@ class FavoriteProducts extends Component {
 					(
 						<div>
 							<h3>No ha marcado ningún producto como favorito.</h3>
-							<Image src={image} />
+							<Image src={image} style={{width: 660, height: 'auto'}} responsive/>
 						</div>
 					)
 				}
