@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { Grid } from 'react-bootstrap'
 
-import './ListProducts.css'
 import products from '../../../utils/products'
 import ProductCard from '../../shared/containers/ProductCard'
 

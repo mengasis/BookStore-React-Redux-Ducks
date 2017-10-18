@@ -15,7 +15,6 @@ const favoritesReducer = (state = initialState.get('products').get('favorites'),
 		return state.set(action.payload, 1)
 
 	case types.REMOVE_FAVORITE_PRODUCT:{
-		console.log('Eliminando id:', action.payload)
 		return state.set(action.payload, 0)
 	}
 	default:

@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { Row, Col, Glyphicon, Button, Media, ButtonToolbar } from 'react-bootstrap'
 
+import './ProductCard.css'
+
 class ProductCard extends Component {
 
 	constructor(props) {
