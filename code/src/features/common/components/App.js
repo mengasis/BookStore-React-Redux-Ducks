@@ -24,7 +24,6 @@ class App extends Component {
 	render() {
 
 		const { children, currentPage } = this.props
-		console.log(currentPage)
 
 		return (
 			<div className="App">
