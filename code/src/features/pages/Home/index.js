@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
 
+import ResponsiveImage from '../../shared/components/ResponsiveImage'
 import image from './images/history.png'
 class Home extends Component {
 	render() {
 		return (
 			<div>
-				<h1>Bienvenido!!</h1>
-				<Image src={image}/>
+				<h3>Bienvenido!!</h3>
+				<ResponsiveImage image={image}/>
 
 				<p>Aquí puedes encontrar los mejores libros de historia universal, con bellas
 					ilustraciones y muy sencillos de comprender. 
