@@ -2,14 +2,33 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { Row, Col, Glyphicon, Button, Media, ButtonToolbar } from 'react-bootstrap'
 
-class ProductCard extends Component {
-	render() {
+import './ProductCard.css'
 
-		const { key, product } = this.props
+class ProductCard extends Component {
+
+	constructor(props) {
+		super(props)
+		
+		this.handleAddFavorite = this.handleAddFavorite.bind(this)
+		this.handleRemoveFavorite = this.handleRemoveFavorite.bind(this)
+	}
+	
+	handleAddFavorite(e){
+		e.preventDefault()
+		this.props.actions.addFavorites(e.target.id)
+	}
+
+	handleRemoveFavorite(e){
+		e.preventDefault()
+		this.props.actions.removeFavorites(e.target.id)
+	}
+
+	render() {
+		const { product, favorites } = this.props
 
 		return (
 			<div>
-				<Row key={key} className="card-product">
+				<Row className="card-product">
 					<Col xs={6} md={10}>
 						<Media>
 							<Media.Left>
@@ -20,9 +39,16 @@ class ProductCard extends Component {
 								<p>{product.description}</p>
 								<h3>$ {product.price}</h3>
 								<ButtonToolbar>
-									<Button>
-										<Glyphicon glyph="bookmark" /> Agregar a Favoritos
-									</Button>
+
+									{ favorites.get(product.id.toString()) === 1 ?
+										<Button bsStyle="danger" id={product.id} onClick={this.handleRemoveFavorite}>
+											<Glyphicon glyph="bookmark" /> Quitar de Favoritos
+										</Button>
+										:
+										<Button id={product.id} onClick={this.handleAddFavorite}>
+											<Glyphicon glyph="bookmark" /> Agregar a Favoritos
+										</Button>
+									}
 									<Button bsStyle="success">
 										<Glyphicon glyph="shopping-cart" /> Comprar
 									</Button>
@@ -38,13 +64,14 @@ class ProductCard extends Component {
 }
 
 ProductCard.propTypes = {
-	key: PropTypes.string.isRequired,
 	product: PropTypes.shape({
 		id: PropTypes.number,
 		title: PropTypes.string,
 		description: PropTypes.string,
 		image: PropTypes.string
-	})
+	}),
+	favorites: PropTypes.object,
+	actions: PropTypes.objectOf(PropTypes.func)
 }
 
 export default ProductCard
