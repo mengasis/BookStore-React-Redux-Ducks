@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import { Grid, Image } from 'react-bootstrap'
-
+import { Grid } from 'react-bootstrap'
 
 import products from '../../../../utils/products'
 import ProductCard from '../../../shared/containers/ProductCard'

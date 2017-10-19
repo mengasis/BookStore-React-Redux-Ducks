@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { IndexLinkContainer, LinkContainer } from 'react-router-bootstrap'
 import PropTypes from 'prop-types'
-import { Nav, NavItem, Glyphicon } from 'react-bootstrap'
+import { Nav, NavItem } from 'react-bootstrap'
 
 
 import menu from '../../../utils/menu'
