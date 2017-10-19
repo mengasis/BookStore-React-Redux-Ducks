@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import { Grid, Image } from 'react-bootstrap'
+import { Grid } from 'react-bootstrap'
 
-
+import ResponsiveImage from '../../../shared/components/ResponsiveImage'
 import products from '../../../../utils/products'
 import ProductCard from '../../../shared/containers/ProductCard'
 import image from './images/empty_favorites.png'
@@ -20,7 +20,7 @@ class FavoriteProducts extends Component {
 					(
 						<div>
 							<h3>No ha marcado ningún producto como favorito.</h3>
-							<Image src={image} />
+							<ResponsiveImage image={image}/>
 						</div>
 					)
 				}

@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux-immutable'
-import { fromJS, Map as map } from 'immutable'
+import { fromJS } from 'immutable'
 
 import types from './types'
 
