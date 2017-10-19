@@ -29,9 +29,17 @@
 }
 
 .Content {
-  margin: 0 auto;
+	margin: 0 auto;
 	width: 90%;
 	padding: 60px;
+}
+
+@media (max-width: 766px) {
+	.Content  { 
+		margin: 0 auto;
+		width: 90%;
+		padding-top: 130px;
+	}
 }
 
 @keyframes App-logo-spin {
