@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 bash
-if [ ! -d "/home/node/code/" ]; then
+if [ ! -d "/home/node/" ]; then
 	yarn global add create-react-app
 	create-react-app code
 fi
